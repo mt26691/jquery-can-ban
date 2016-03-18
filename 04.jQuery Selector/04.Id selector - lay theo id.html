@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Id Seletor hocdai.com</title>
+</head>
+<body>
+        <h1 id="test-heading">Đây là h1 có id = test-heading</h1>
+    <!--jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    <script>
+        //document.ready đảm bảo  các phần tử trên trang đã được tải xong
+        $(document).ready(function(){
+            
+            //sự kiện click cho phần tử h1, có id = test-heading
+            $("#test-heading").click(function(){
+                //$(this).text() lấy nội dung của phần tử đang phát sinh sự kiện.
+                var text = $(this).text();
+                alert(text);
+            });
+        });
+    </script>
+</body>
+
+</html>

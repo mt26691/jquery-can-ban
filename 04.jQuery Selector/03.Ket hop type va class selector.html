@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Class Seletor hocdai.com</title>
+</head>
+<body>
+        <p class="test">
+            Đây là phần tử p có class = test
+        </p>
+        <h1 class="test">
+            Đây là phần tử h1 có class = test, khi click vào nó sẽ ẩn đi
+        </h1>
+        <h1 class="test">
+            Đây là phần tử h1 thứ 2 có class = test, khi click vào nó sẽ ẩn đi
+        </h1>
+        <p>
+            Đây là phần tử p bình thường.
+        </p>
+        <h1>
+            Đây là phần tử h1 bình thường
+        </h1>
+    <!--jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    <script>
+        //document.ready đảm bảo  các phần tử trên trang đã được tải xong
+        $(document).ready(function(){
+            //sự kiện phần tử p có class = test được click
+            $("p.test").click(function(){
+                alert("Bạn đã click vào phần tử p có class = test")
+            });
+            
+            //sự kiện phần tử h1 có class = test được click
+            $("h1.test").click(function(){
+                //$(this) chỉ đến phần tử đang phát sinh sự kiện.
+                $(this).hide();
+            });
+        });
+    </script>
+</body>
+
+</html>

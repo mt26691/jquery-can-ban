@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Type Seletor hocdai.com</title>
+</head>
+<body>
+    <p>Đây là phần tử p đầu tiên</p>
+    <div>Đây là một phần tử div</div>
+    <h1>Đây là một phần tử h1</h1>
+    <h2>Đây là một phần tử h2</h2>
+    <p>Đây là phần tử p thứ hai</p>
+    <!--jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    <script>
+        //document.ready đảm bảo  các phần tử trên trang đã được tải xong
+        $(document).ready(function(){
+            //sự kiện phần tử p được click
+            $("p").click(function(){
+                alert("Bạn đã click vào phần tử p")
+            });
+             //sự kiện phần tử div được click
+            $("div").click(function(){
+                alert("Bạn đã click vào phần tử div")
+            });
+             //sự kiện phần tử h1 được click
+            $("h1").click(function(){
+                alert("Bạn đã click vào phần tử h1")
+            });
+             //sự kiện phần tử h2 được click
+            $("h2").click(function(){
+                alert("Bạn đã click vào phần tử h2")
+            });
+        });
+    </script>
+</body>
+
+</html>
