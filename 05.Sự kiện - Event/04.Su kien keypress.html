@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sự kiện keypress hocdai.com</title>
+</head>
+<body>
+    <input type="text"/>
+    <!--jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    <script>
+        //document.ready đảm bảo  các phần tử trên trang đã được tải xong
+        $(document).ready(function(){
+            
+            //sự kiện keypress cho input
+            $("input").keypress(function(event){
+               var key = String.fromCharCode(event.keyCode);
+               console.log("Bạn vừa bấm "+ key);
+            });
+        });
+    </script>
+</body>
+
+</html>

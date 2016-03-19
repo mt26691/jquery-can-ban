@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sự kiện click - hocdai.com</title>
+</head>
+<body>
+        <p id ="test-p">
+            Sự kiện click là sự kiện thường xuyên được sử dụng
+        </p>
+        <input type="button" id="test-button" value="Click Me!"/>
+    <!--jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    <script>
+        //document.ready đảm bảo  các phần tử trên trang đã được tải xong
+        $(document).ready(function(){
+           //sự kiện click cho nút có id = test-button
+           $('#test-button').click(function(){
+               //thông báo nội dung của thẻ p có id = test-p
+               alert($('#test-p').text());
+           });
+        });
+    </script>
+</body>
+
+</html>
