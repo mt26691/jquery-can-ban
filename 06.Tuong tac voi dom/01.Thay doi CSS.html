@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tương tác với DOM hocdai.com</title>
+</head>
+
+<body>
+    <p>Đây là phần tử p</p>
+    <div>Đây là phần tử div</div>
+    <!--jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    <script>
+        //document.ready đảm bảo  các phần tử trên trang đã được tải xong
+        $(document).ready(function(){
+           //đổi màu của thẻ p thành màu đỏ
+           $("p").css({"color":"red"}); 
+           $("div").css({"color":"blue","background-color":"orange"});
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Thêm và xóa class hocdai.com</title>
+    <style>
+        .test-class {
+            background-color: blue;
+            color: white;
+            font-size: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Đây là thẻ p</p>
+
+    <!--jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    <script>
+        //document.ready đảm bảo  các phần tử trên trang đã được tải xong
+        $(document).ready(function(){
+            $("p").mouseenter(function(){
+                $(this).addClass("test-class");
+            });
+             $("p").mouseleave(function(){
+                $(this).removeClass("test-class");
+            });
+        });
+    </script>
+</body>
+
+</html>

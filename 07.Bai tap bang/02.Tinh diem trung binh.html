@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+            table td {
+                height: 44px;
+                width: 200px;
+                padding: 3px;
+                text-align: center;
+            }
+
+                table td.name {
+                    text-align: left;
+                }
+
+            table th {
+                height: 44px;
+                width: 200px;
+                padding: 3px;
+                font-weight: bold;
+            }
+
+        #calculate-mark {
+            margin-top: 5px;
+            padding: 3px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+       
+    </style>
+    <title>Bài tập bảng - hocdai.com</title>
+</head>
+
+<body>
+    <p><b>Bảng điểm trung bình học tập</b></p>
+    <table border="1">
+        <tr>
+            <th>Họ và tên</th>
+            <th>JavaScript</th>
+            <th>jQuery</th>
+            <th>Điểm Trung Bình</th>
+        </tr>
+
+        <tr class="mark-row">
+            <td class="name">Nguyễn Văn A</td>
+            <td>
+                <input type="text" maxlength="2" class="javascript-mark">
+            </td>
+            <td>
+                <input type="text" maxlength="2" class="jquery-mark">
+            </td>
+            <td class="average-mark"> </td>
+        </tr>
+
+        <tr class="mark-row">
+            <td class="name">Nguyễn Văn B</td>
+            <td>
+                <input type="text" maxlength="2" class="javascript-mark">
+            </td>
+            <td>
+                <input type="text" maxlength="2" class="jquery-mark">
+            </td>
+            <td class="average-mark"></td>
+        </tr>
+
+        <tr class="mark-row">
+            <td class="name">Nguyễn Thị C</td>
+            <td>
+                <input type="text" maxlength="2" class="javascript-mark">
+            </td>
+            <td>
+                <input type="text" maxlength="2" class="jquery-mark">
+            </td>
+            <td class="average-mark"></td>
+        </tr>
+    </table>
+    <input type="button" id="calculate-mark" value="Tính điểm trung bình" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    <script>
+        $('#calculate-mark').click(function () {
+            $('tr.mark-row').each(function () {
+                var javaScriptMark = $(this).find('.javascript-mark').val();
+                if (isNaN(javaScriptMark) || javaScriptMark == "" ) {
+                    $(this).find('.average-mark').text('Thiếu thông tin');
+                }
+                else {
+                    var jqueryMark = $(this).find('.jquery-mark').val();
+                    if (isNaN(jqueryMark) || jqueryMark =="") {
+                        $(this).find('.average-mark').text('Thiếu thông tin');
+                    }
+                    else {
+                        var averageMark = (parseInt(javaScriptMark) * 5 + parseInt(jqueryMark) * 4) / 9;
+                        $(this).find('.average-mark').text(averageMark);
+                    }
+                }
+
+            });
+        });
+    </script>
+</body>
+
+</html>
