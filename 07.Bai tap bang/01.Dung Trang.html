@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        
+        table th {
+            height: 44px;
+            width: 200px;
+            padding: 3px;
+            font-weight: bold;
+        }
+        
+        table td {
+            height: 44px;
+            width: 200px;
+            padding: 3px;
+            text-align: center;
+        }
+        
+        table td.name {
+            text-align: left;
+        }
+        
+        #calculate-mark {
+            margin-top: 5px;
+            padding: 3px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+    </style>
+    <title>Bài tập bảng - hocdai.com</title>
+</head>
+
+<body>
+    <h3>Bảng điểm trung bình học tập</h3>
+    <table border="1">
+        <tr>
+            <th>Họ và tên</th>
+            <th>JavaScript</th>
+            <th>jQuery</th>
+            <th>Điểm Trung Bình</th>
+        </tr>
+
+        <tr>
+            <td class="name">Nguyễn Văn A</td>
+            <td>
+                <input type="text">
+            </td>
+            <td>
+                <input type="text">
+            </td>
+            <td> </td>
+        </tr>
+
+        <tr>
+            <td class="name">Nguyễn Văn B</td>
+            <td>
+                <input type="text">
+            </td>
+            <td>
+                <input type="text">
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td class="name">Nguyễn Thị C</td>
+            <td>
+                <input type="text">
+            </td>
+            <td>
+                <input type="text">
+            </td>
+            <td></td>
+        </tr>
+    </table>
+    <input type="button" id="calculate-mark" value="Tính điểm trung bình" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+
+</body>
+
+</html>

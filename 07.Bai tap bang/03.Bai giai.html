@@ -39,7 +39,7 @@
 </head>
 
 <body>
-    <p><b>Bảng điểm trung bình học tập</b></p>
+    <h3>Bảng điểm trung bình học tập</h3>
     <table border="1">
         <tr>
             <th>Họ và tên</th>
@@ -86,16 +86,22 @@
     <script>
         $('#calculate-mark').click(function () {
             $('tr.mark-row').each(function () {
+                //this chỉ đến phần tử đang được duyệt qua
+                //hàm find giúp truy cập đến phần tử con
                 var javaScriptMark = $(this).find('.javascript-mark').val();
+                //nếu người dùng chưa nhập hoặc nhập không phải là số thì in ra thiếu thông tin
                 if (isNaN(javaScriptMark) || javaScriptMark == "" ) {
                     $(this).find('.average-mark').text('Thiếu thông tin');
                 }
                 else {
+                    //lấy điểm jQuery
                     var jqueryMark = $(this).find('.jquery-mark').val();
+                    //kiểm tra người dùng đã nhập điểm jQuery hay chưa
                     if (isNaN(jqueryMark) || jqueryMark =="") {
                         $(this).find('.average-mark').text('Thiếu thông tin');
                     }
                     else {
+                        //tính và in kết quả
                         var averageMark = (parseInt(javaScriptMark) * 5 + parseInt(jqueryMark) * 4) / 9;
                         $(this).find('.average-mark').text(averageMark);
                     }
