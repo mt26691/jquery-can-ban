@@ -1,0 +1,61 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bài tập máy tính</title>
+    <style>
+        .btn {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+        
+        .answer-holder {
+            width: 98%;
+            height: 35px;
+        }
+        
+        .red-text {
+            color: red;
+        }
+        
+        .form-holder {
+            width: 200px;
+            margin: auto;
+        }
+        
+        form,
+        input,
+        button {
+            margin: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form class="form-holder">
+        <input type="hidden" id="operation" value="" />
+        <input type="text" id="answer" value="" class="answer-holder" disabled="disabled" />
+        <input type="button" value="+" id="plus" class="btn" />
+        <input type="button" value="-" id="subtract" class="btn" />
+        <input type="button" value="/" id="divide" class="btn" />
+        <input type="button" value="*" id="product" class="btn" />
+        <input type="button" value="1" id="1" class="btn" />
+        <input type="button" value="2" id="2" class="btn" />
+        <input type="button" value="3" id="3" class="btn" />
+        <input type="button" value="4" id="4" class="btn" />
+        <input type="button" value="5" id="5" class="btn" />
+        <input type="button" value="6" id="6" class="btn" />
+        <input type="button" value="7" id="7" class="btn" />
+        <input type="button" value="8" id="8" class="btn" />
+        <input type="button" value="9" id="9" class="btn" />
+        <input type="button" value="0" id="0" class="btn" />
+        <input type="button" value="C" id="C" class="btn red-text" />
+        <input type="button" value="=" id="equals" class="btn" />
+    </form>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+</body>
+
+</html>
