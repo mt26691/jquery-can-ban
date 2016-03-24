@@ -4,7 +4,7 @@ jQuery source code cho khóa học tại website http://hocdai.com/
 Khóa học jQuery căn bản: http://hocdai.com/jquery-can-ban/
 
 ## Tài liệu tham khảo
-    1. Practical jQuery http://isbn.directory/book/9781484207888
+    1. Practical jQuery [jQuery]http://isbn.directory/book/9781484207888
     2. jQuery W3School http://www.w3schools.com/jquery/
     3. Learning jQuery official website https://learn.jquery.com/
 
